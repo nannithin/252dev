@@ -3,7 +3,7 @@ import botlogo from './assets/code.png';
 
 const Card = ({name})=>{
     return(
-        <div className="w-[225px] text my-5 shadow-md p-4 rounded-md">
+        <div className="w-[225px] mx-5 text my-5 shadow-md p-4 rounded-md">
            <img className="md:w-12 w-10" src={botlogo} alt="" /> 
            <div>
             <h1 className="text-[#2f1793] font-bold text-xl my-3">{name}</h1>
