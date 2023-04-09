@@ -10,39 +10,33 @@ import Card2 from "./card2";
 
 const Home =()=>{
   
-    var settings = {
-        dots: false,
-        buttons : false,
-        infinite: false,
-        speed: 500,
-        slidesToShow: 4,
-        slidesToScroll: 1,
-        responsive: [
-          {
-            breakpoint: 1110,
-            settings: {
-              slidesToShow: 3,
-              slidesToScroll: 3,
-              dots: true
-            }
-          },
-          {
-            breakpoint: 1000,
-            settings: {
-              slidesToShow: 2,
-              slidesToScroll: 2,
-              initialSlide: 2
-            }
-          },
-          {
-            breakpoint: 620,
-            settings: {
-              slidesToShow: 1,
-              slidesToScroll: 1
-            }
-          }
-        ]
-      };
+  var settings = {
+    dots: false,
+    buttons : false,
+    infinite: false,
+    speed: 500,
+    slidesToShow: 5,  // change this to 5
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 1110,
+        settings: {
+          slidesToShow: 2,  // change this to 2
+          slidesToScroll: 2,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 1000,
+        settings: {
+          slidesToShow: 1,  // change this to 1
+          slidesToScroll: 1,
+          initialSlide: 2
+        }
+      }
+    ]
+  };
+  
     return(
     <div>
         <div className="z-[-19]">
@@ -67,8 +61,8 @@ const Home =()=>{
                 <h1 className="my-5 text-2xl md:text-3xl font-bold text-[#2f1793] text-center">Our Bots</h1>
                 
                 <Slider {...settings}>
-                <Card name="Gaana" />
-                   <Card name="Bolt" />
+                  <Card name="Gaana" />
+                  <Card name="Bolt" />
                   <Card name="OYO" />
                   <Card name="Alex" />
                   <Card name="Aqua" /> 
